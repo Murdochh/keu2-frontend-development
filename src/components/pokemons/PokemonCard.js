@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PokemonCard = ({id, name, image, type, secondaryImage, height, weight, hp, attack, defense, speed}) => {
+const PokemonCard = ({id, name, image, type, secondaryImage, height, weight, hp, attack, defense, specialAttack, specialDefense, speed}) => {
 
 
 
