@@ -1,10 +1,12 @@
 import React from 'react';
 
-const PokemonCard = ({id, name, image, type, secondaryImage, height, weight, hp, attack, defense, specialAttack, specialDefense, speed}) => {
+//Pass on every parameter we want to show in our page
+const PokemonCard = ({id, name, image, type, secondaryImage, height, weight, hp, attack, defense, speed}) => {
 
 
-
+//API Weight is not correct, change it
     let correctWeight = (weight* 0.1);
+    //Dynamic styling per card
     const frontStyle = `card-front ${type}`
     const backStyle= `card-back ${type}`
     return(

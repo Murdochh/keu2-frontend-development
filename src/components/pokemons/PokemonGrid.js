@@ -1,8 +1,13 @@
 import React from 'react';
 import PokemonCard from './PokemonCard.js';
 
+//Requires items, query and ptype in order to render
 const PokemonGrid = ({items, query, ptype,}) => {
-    
+   
+    //setting up conditional rendering
+    //if the pType string is empty, render conditionally based on search result
+    //This meaning if the search query is empty, return all, otherwise return only the search result.
+    //Then sort it based on ID so it shows in correct order and then map each attribute.
     if (ptype === ''){
     return(
 
@@ -30,6 +35,7 @@ const PokemonGrid = ({items, query, ptype,}) => {
         </div>
     );
         }
+        //If ptype isn't empty, filter on the ptype selected
         else
         return(
         <div className='pokemon-container'>
